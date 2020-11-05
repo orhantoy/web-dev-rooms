@@ -83,6 +83,10 @@ The customer of this project is HackYourFuture but you should also consider Your
 
 [Business Glossary](/BusinessGlossary.md)
 
+#### 🖌️ Wireframes 
+
+https://www.figma.com/file/9gN79UmpDPrAZk5jY4V7Ww/Study-Group-Management-System
+
 #### 🗄️ Database Model Diagram
 
 _Add here the DB Model Diagram_ - Use https://dbdiagram.io/
