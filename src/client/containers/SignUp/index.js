@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
-import { signUp } from '../../firebase/auth';
+
 import UserCreationSuccess from '../../components/Success/UserCreationSuccess';
 import SignUp from '../../components/Forms/SignUp';
 import Loader from '../../components/Loader';
+
+function signUp() {
+  // eslint-disable-next-line
+  console.warn('Sign up is not implemented!');
+}
 
 const getDoesPasswordsMatch = ({ password, passwordConfirm }) =>
   password === passwordConfirm;
