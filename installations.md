@@ -37,9 +37,9 @@ Remember to enable "format on save" in VS Code settings. You can also enable for
 Environment variables are used for working with sensitive data like passwords
 and usernames.
 
-Fx connecting to a database, we dont want to commit the code that shows our
+Fx connecting to a database, we don't want to commit the code that shows our
 password. Therefore we use environment variables instead. The `.env` **SHOULD
-NEVER** be commited!!!! Therefore it is in the `.gitignore` file (ignored by
+NEVER** be committed!!!! Therefore it is in the `.gitignore` file (ignored by
 git).
 
 Here is how to get started with the `.env` file
