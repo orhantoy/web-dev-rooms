@@ -5,7 +5,7 @@ Install it from here:
 
 Windows: https://dev.mysql.com/downloads/windows/installer/
 
-Mac: https://dev.mysql.com/doc/refman/5.7/en/osx-installation-pkg.html
+Mac: https://dev.mysql.com/doc/refman/8.0/en/osx-installation-pkg.html
 
 #### Setting up on Windows
 Only thing Windows users have to do is run the following command anywhere in their terminal (not necessarily the project folder): npm install -g win-node-env
