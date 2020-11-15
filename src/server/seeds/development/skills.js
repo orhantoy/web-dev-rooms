@@ -1,5 +1,3 @@
-// TODO: This is a sample seed file for demonstration. Remove before adding real ones.
-
 exports.seed = function(knex) {
   // Deletes ALL existing entries
   return knex('skills')
@@ -7,18 +5,9 @@ exports.seed = function(knex) {
     .then(function() {
       // Inserts seed entries
       return knex('skills').insert([
-        {
-          id: 1,
-          title: 'HTML / CSS',
-        },
-        {
-          id: 2,
-          title: 'Firebase',
-        },
-        {
-          id: 3,
-          title: 'Javascript',
-        },
+        { id: 1, colName: 'HTML / CSS' },
+        { id: 2, colName: 'Firebase' },
+        { id: 3, colName: 'Javascript' },
         {
           id: 4,
           title: 'MYSQL',
