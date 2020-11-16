@@ -1,6 +1,6 @@
 import React from 'react';
-import StyledButton from './label.styles.js';
+import StyledLabel from './label.styles.js';
 
 export default function Labels() {
-  return <StyledButton type="button">HTML/CSS</StyledButton>;
+  return <StyledLabel type="button">HTML/CSS</StyledLabel>;
 }

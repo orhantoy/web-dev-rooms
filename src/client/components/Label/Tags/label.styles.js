@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledButton = styled.button`
+export const StyledLabel = styled.label`
   background-color: #293a7d;
   border: none;
   color: white;
@@ -11,6 +11,10 @@ export const StyledButton = styled.button`
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 32px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
 `;
 
-export default StyledButton;
+export default StyledLabel;
