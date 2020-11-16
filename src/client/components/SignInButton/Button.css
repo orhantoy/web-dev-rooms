@@ -1,5 +1,5 @@
 .button {
-  padding: 20px 20px 18px 20px;
+  padding: 0;
   cursor: pointer;
   outline: none;
   display: flex;
@@ -15,24 +15,28 @@
 }
 
 .button img {
-  width: 21%;
+  width: 100%;
   display: flex;
-  margin: -5% 5% -2% -2%;
 }
 
-.button:hover {
-  background-color: #e0f8e0;
-}
 .button:active {
   transform: translateY(4px);
 }
 @media screen and (max-width: 800px) {
   .button {
-    width: 18%;
+    width: 50%;
+  }
+  .button img {
+    width: 100%;
+    display: flex;
   }
 }
 @media screen and (max-width: 500px) {
   .button {
-    width: 18%;
+    width: 50%;
+  }
+  .button img {
+    width: 100%;
+    display: flex;
   }
 }

@@ -1,15 +1,14 @@
 import React from 'react';
 import './Button.css';
-import slackLogo from './Images/slack-logo.png';
 
-// eslint-disable-next-line react/prop-types
-const Button = ({ children }) => {
-  // eslint-disable-next-line react/button-has-type
+const Button = () => {
   return (
-    // eslint-disable-next-line react/button-has-type
     <button className="button">
-      <img src={slackLogo} alt="logo" />
-      {children}
+      <img
+        alt="Sign in with Slack"
+        src="https://platform.slack-edge.com/img/sign_in_with_slack.png"
+        srcSet="https://platform.slack-edge.com/img/sign_in_with_slack.png 1x, https://platform.slack-edge.com/img/sign_in_with_slack@2x.png 2x"
+      />
     </button>
   );
 };
