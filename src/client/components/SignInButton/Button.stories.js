@@ -6,4 +6,4 @@ export default {
   component: Button,
 };
 
-export const Buttun = () => <Button />;
+export const SignButton = () => <Button />;
