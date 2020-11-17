@@ -1,6 +1,4 @@
-import styled from 'styled-components';
-
-export const StyledLabel = styled.label`
+.button {
   background-color: #293a7d;
   border: none;
   color: white;
@@ -15,6 +13,4 @@ export const StyledLabel = styled.label`
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-`;
-
-export default StyledLabel;
+}

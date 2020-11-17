@@ -10,7 +10,6 @@ module.exports = {
     'react/prefer-stateless-function': 'warn',
     'react/prop-types': 'warn',
     'import/prefer-default-export': 'off',
-    '@typescript-eslint/camelcase': 'warn',
     'func-names': 'off',
     '@typescript-eslint/no-var-requires': 'off',
     'no-restricted-globals': 'off',
@@ -24,6 +23,5 @@ module.exports = {
     'react/destructuring-assignment': 'off',
     'react/state-in-constructor': 'off',
     'react/no-access-state-in-setstate': 'off',
-    'import/no-named-as-default': 0,
   },
 };
