@@ -1,9 +1,10 @@
 import React from 'react';
 import './Button.css';
+import { action } from '@storybook/addon-actions';
 
 const Button = () => {
   return (
-    <button type="submit" className="button">
+    <button type="submit" className="button" onClick={action('clicked')}>
       <img
         alt="Sign in with Slack"
         src="https://platform.slack-edge.com/img/sign_in_with_slack.png"
