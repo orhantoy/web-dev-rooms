@@ -1,12 +1,12 @@
-import React from "react";
-import PropTypes from "prop-types";
-import "./Input.css";
+import React from 'react';
+import PropTypes from 'prop-types';
+import './Input.css';
 
-export default function Input({ className, placeholder }) {
-  return <input className={className} placeholder={placeholder} />;
+export default function Input({ classname, placeholder }) {
+  return <input className={classname} placeholder={placeholder} />;
 }
 
 Input.propTypes = {
-  title: PropTypes.string.isRequired,
-  className: PropTypes.string,
+  placeholder: PropTypes.string.isRequired,
+  classname: PropTypes.string.isRequired,
 };

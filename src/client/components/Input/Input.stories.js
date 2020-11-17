@@ -1,14 +1,14 @@
-import React from "react";
-import Input from "./Input";
+import React from 'react';
+import Input from './Input';
 
-export default { title: "Input" };
+export default { title: 'Input' };
 
 export const Fullname = () => (
-  <Input className="large" placeholder="Full Name..." />
+  <Input classname="large" placeholder="Full Name..." />
 );
 export const Codepenlink = () => (
-  <Input className="medium" placeholder="Codepen Link" />
+  <Input classname="medium" placeholder="Codepen Link" />
 );
 export const Slacklink = () => (
-  <Input className="small" placeholder="https://slack.com/meeting..." />
+  <Input classname="small" placeholder="https://slack.com/meeting..." />
 );
