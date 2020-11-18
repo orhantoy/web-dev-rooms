@@ -2,7 +2,7 @@
 Can be deleted as soon as the first real controller is added. */
 const knex = require('../../config/db');
 const Error = require('../lib/utils/http-error');
-//const moment = require('moment-timezone');
+// const moment = require('moment-timezone');
 
 const getClasses = async () => {
   try {
@@ -49,7 +49,6 @@ const createClass = async (body) => {
     successful: true,
   };
 };
-
 
 module.exports = {
   getClasses,
