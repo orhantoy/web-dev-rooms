@@ -94,19 +94,19 @@ router.get('/:id', (req, res, next) => {
  *      5XX:
  *        description: Unexpected error.
  */
-// router.post('/', (req, res) => {
-//   listOfGroupsController
-//     .createModule(req.body)
-//     .then((result) => res.json(result))
-//     .catch((error) => {
-//       console.log(error);
-//
-//       res
-//         .status(400)
-//         .send('Bad request')
-//         .end();
-//     });
-// });
+router.post('/', (req, res) => {
+  listOfGroupsController
+    .createModule(req.body)
+    .then((result) => res.json(result))
+    .catch((error) => {
+      console.log(error);
+
+      res
+        .status(400)
+        .send('Bad request')
+        .end();
+    });
+});
 
 /**
  * @swagger
@@ -142,12 +142,12 @@ router.get('/:id', (req, res, next) => {
  *      5XX:
  *        description: Unexpected error.
  */
-// router.patch('/:id', (req, res, next) => {
-//   listOfGroupsController
-//     .editModule(req.params.id, req.body)
-//     .then((result) => res.json(result))
-//     .catch(next);
-// });
+router.patch('/:id', (req, res, next) => {
+  listOfGroupsController
+    .editModule(req.params.id, req.body)
+    .then((result) => res.json(result))
+    .catch(next);
+});
 
 /**
  * @swagger
@@ -167,18 +167,18 @@ router.get('/:id', (req, res, next) => {
  *      5XX:
  *        description: Unexpected error.
  */
-// router.delete('/:id', (req, res) => {
-//   listOfGroupsController
-//     .deleteModule(req.params.id, req)
-//     .then((result) => {
-//       // If result is equal to 0, then that means the module id does not exist
-//       if (result === 0) {
-//         res.status(404).send('The module ID you provided does not exist.');
-//       } else {
-//         res.json({ success: true });
-//       }
-//     })
-//     .catch((error) => console.log(error));
-// });
+router.delete('/:id', (req, res) => {
+  listOfGroupsController
+    .deleteModule(req.params.id, req)
+    .then((result) => {
+      // If result is equal to 0, then that means the module id does not exist
+      if (result === 0) {
+        res.status(404).send('The module ID you provided does not exist.');
+      } else {
+        res.json({ success: true });
+      }
+    })
+    .catch((error) => console.log(error));
+});
 
 module.exports = router;
