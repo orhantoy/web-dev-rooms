@@ -8,4 +8,4 @@ export default {
   component: Button,
 };
 
-export const SignButton = () => <Button click={action('clicked')} />;
+export const SignButton = () => <Button onclick={action('clicked')} />;

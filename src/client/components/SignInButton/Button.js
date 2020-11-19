@@ -1,9 +1,11 @@
 import React from 'react';
 import './Button.css';
+import PropTypes from 'prop-types';
 
-const Button = ({ click }) => {
+const Button = (props) => {
+  const { onclick } = props;
   const clicked = () => {
-    click();
+    onclick();
   };
   return (
     <button type="submit" className="button" onClick={clicked}>
@@ -15,4 +17,6 @@ const Button = ({ click }) => {
     </button>
   );
 };
+Button.propTypes = { onclick: PropTypes.func.isRequired };
+
 export default Button;
