@@ -1,5 +1,12 @@
 import React from 'react';
-import Labels from './Label';
+import Label from './Label';
 
-export default { title: 'Label' };
-export const Label = () => <Labels />;
+import { storiesOf } from '@storybook/react';
+import { text, withKnobs } from '@storybook/addon-knobs';
+
+const stories = storiesOf('Storybook knobs', module);
+stories.addDecorator(withKnobs);
+
+stories.add('with a label', () => (
+  <Label text={text('Label', 'HTML/CSS')}>HTML/CSS</Label>
+));

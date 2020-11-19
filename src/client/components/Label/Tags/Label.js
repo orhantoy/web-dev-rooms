@@ -2,16 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './label.style.css';
 
-const Labels = ({ text }) => <label className="button">{text}</label>;
+const Label = ({ text }) => <label className="label">{text}</label>;
 
 // Expected prop values
-Labels.propTypes = {
+Label.propTypes = {
   text: PropTypes.string,
 };
 
 // Default prop values
-Labels.defaultProps = {
-  text: 'HTML/CSS',
+Label.defaultProps = {
+  text: '',
 };
 
-export default Labels;
+export default Label;
