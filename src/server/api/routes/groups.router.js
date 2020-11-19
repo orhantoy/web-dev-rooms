@@ -5,6 +5,10 @@ const router = express.Router({ mergeParams: true });
 // controllers
 const groupsController = require('../controllers/groups.controller');
 
+const generalError = (res) => (error) => {
+  res.status(400);
+  res.send(error.toString()); // instead of .message
+};
 /**
  * @swagger
  * /groups:
@@ -19,11 +23,11 @@ const groupsController = require('../controllers/groups.controller');
  *      5XX:
  *        description: Unexpected error.
  */
-router.get('/', (req, res, next) => {
+router.get('/', (req, res) => {
   groupsController
-    .getClasses()
+    .getGroups()
     .then((result) => res.json(result))
-    .catch(next);
+    .catch(generalError(res));
 });
 
 /**
@@ -48,11 +52,11 @@ router.get('/', (req, res, next) => {
  *      5XX:
  *        description: Unexpected error.
  */
-router.get('/:id', (req, res, next) => {
+router.get('/:id', (req, res) => {
   groupsController
-    .getClassById(req.params.id)
+    .getGroupById(req.params.id)
     .then((result) => res.json(result))
-    .catch(next);
+    .catch(generalError(res));
 });
 
 module.exports = router;
