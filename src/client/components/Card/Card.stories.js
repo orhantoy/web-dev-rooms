@@ -1,6 +1,6 @@
 import React from 'react';
 import { withKnobs, text } from '@storybook/addon-knobs';
-import { Card } from './Card';
+import Card from './Card';
 
 export default {
   title: 'Title and Text card',
@@ -13,7 +13,7 @@ export const Component = () => (
       title={text('Title', 'This is the title of the card ')}
       text={text(
         'Text inside the component',
-        'There are no event’s to show here maybe you did not booked any event yet. Please go to the events page and sign up for some event',
+        'This is an example text:There are no event’s to show here maybe you did not booked any event yet. Please go to the events page and sign up for some event',
       )}
     />
   </>
