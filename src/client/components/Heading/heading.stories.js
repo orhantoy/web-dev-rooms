@@ -4,7 +4,6 @@ import Header from './Heading';
 
 export default {
   title: 'Header',
-  component: Header,
 };
 
-export const Text = () => <Header>Current Studygroups</Header>;
+export const storybookHeader = () => <Header>Current Studygroup</Header>;
