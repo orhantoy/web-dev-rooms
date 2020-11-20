@@ -1,0 +1,52 @@
+.avatar-student-comp {
+  height: 316.9661865234375px;
+  width: 30%;
+  left: 14.5313720703125px;
+  top: 36.3284912109375px;
+  border-radius: 50%;
+}
+
+.avatar-mentor-comp {
+  height: 316.9661865234375px;
+  width: 30%;
+  left: 14.5313720703125px;
+  top: 36.3284912109375px;
+  border-radius: 50%;
+}
+
+.avatar-admin-comp {
+  height: 316.9661865234375px;
+  width: 30%;
+  left: 14.5313720703125px;
+  top: 36.3284912109375px;
+  border-radius: 50%;
+}
+
+.all-avatar-images {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@media all and (max-width: 480px) {
+  .all-avatar-images {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .avatar-student-comp {
+    width: 80%;
+    height: 300px;
+  }
+  .avatar-mentor-comp {
+    width: 80%;
+    height: 300px;
+  }
+  .avatar-admin-comp {
+    width: 80%;
+    height: 300px;
+  }
+}
