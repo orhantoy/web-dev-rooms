@@ -32,6 +32,6 @@ AppHeader.propTypes = {
 };
 
 AppHeader.defaultProps = {
-  path: [''],
+  path: '',
 };
  */
