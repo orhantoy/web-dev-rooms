@@ -8,7 +8,7 @@ export default function Modal({ title }) {
       <div className="modal-header">
         <span className="close-modal-btn">x</span>
       </div>
-      <h4>{title} </h4>
+      <h4 className="modal-title">{title} </h4>
     </div>
   );
 }
