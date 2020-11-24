@@ -1,8 +1,8 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import './Card.styles.css';
 
-const Card = (props) => {
+export const Card = (props) => {
   const { title, text } = props;
   return (
     <div className="title-text-card">
@@ -11,4 +11,11 @@ const Card = (props) => {
     </div>
   );
 };
-export default Card;
+Card.propTypes = {
+  title: PropTypes.string,
+  text: PropTypes.string,
+};
+Card.defaultProps = {
+  title: '',
+  text: '',
+};
