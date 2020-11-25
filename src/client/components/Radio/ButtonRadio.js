@@ -4,11 +4,11 @@ const users = ['Student', 'Mentor', 'Admin'];
 function ButtonRadio() {
   return (
     <div className="btn-group">
-      {users.map((u) => (
+      {users.map((user) => (
         <>
-          <button type = "button" name="user" className="button">
+          <button type="button" name="user" className="radiobutton">
             {' '}
-            {u}
+            {user}
           </button>
         </>
       ))}

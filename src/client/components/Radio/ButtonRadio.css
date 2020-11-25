@@ -1,4 +1,4 @@
-.button {
+.radiobutton {
   background-color: #f6f6f6;
   border-radius: 25px;
   background-color: #f6f6f6;
@@ -12,7 +12,7 @@
   cursor: pointer;
 }
 
-.button:focus {
+.radiobutton:focus {
   color: #293a7d;
 }
 .btn-group {
