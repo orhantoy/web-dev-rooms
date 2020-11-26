@@ -3,11 +3,12 @@ import './HyfBigLogo.style.css';
 import hyfLogo from './hyfLogo.png';
 import { PropTypes } from 'prop-types';
 
-export default function HyfBigLogo(props) {
-  const { title, img } = props;
+export default function HyfBigLogo({ title }) {
   return (
-    <div className="hyf">
-      <div>{img && <img className="hyf-logo" src={hyfLogo} alt="logo" />}</div>
+    <div className="hyf-big-logo">
+      <div>
+        <img className="hyf-logo" src={hyfLogo} alt="logo" />
+      </div>
       <h1 className="app-title">{title}</h1>
     </div>
   );
@@ -15,9 +16,4 @@ export default function HyfBigLogo(props) {
 
 HyfBigLogo.propTypes = {
   title: PropTypes.string.isRequired,
-  img: PropTypes.node,
-};
-
-HyfBigLogo.defaultProps = {
-  img: 'https://tinyurl.com/yy3pfhp2',
 };
