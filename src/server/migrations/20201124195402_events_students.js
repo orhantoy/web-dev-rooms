@@ -1,20 +1,20 @@
 exports.up = function(knex) {
-  return knex.schema.createTable('eventsStudents', (table) => {
+  return knex.schema.createTable('events_students', (table) => {
     table.increments();
-    table.string('eventId').notNullable();
-    table.string('studentId').notNullable();
+    table.string('event_id').notNullable();
+    table.string('student_id').notNullable();
     table
-      .datetime('createdAt')
+      .datetime('created_at')
       .defaultTo(knex.fn.now())
       .notNullable();
     table
-      .datetime('updatedAt')
+      .datetime('updated_at')
       .defaultTo(knex.fn.now())
       .notNullable();
-    table.datetime('deletedAt');
+    table.datetime('deleted_at');
   });
 };
 
 exports.down = function(knex) {
-  return knex.schema.dropTable('eventsStudents');
+  return knex.schema.dropTable('events_students');
 };

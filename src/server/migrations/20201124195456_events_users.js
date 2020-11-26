@@ -1,18 +1,18 @@
 exports.up = function(knex) {
   return knex.schema.createTable('events_users', (table) => {
     table.increments();
-    table.string('usersId').notNullable();
+    table.string('users_id').notNullable();
     table.string('status').notNullable();
     table.string('comment').notNullable();
     table
-      .datetime('createdAt')
+      .datetime('created_at')
       .defaultTo(knex.fn.now())
       .notNullable();
     table
-      .datetime('updatedAt')
+      .datetime('updated_at')
       .defaultTo(knex.fn.now())
       .notNullable();
-    table.datetime('deletedAt');
+    table.datetime('deleted_at');
   });
 };
 
