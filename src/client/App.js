@@ -10,6 +10,7 @@ import { useAuthentication } from './hooks/useAuthentication';
 import Header from './components/Navigation/Header';
 import Profile from './containers/Profile';
 import Loader from './components/Loader';
+import Route404 from './components/Route404';
 
 function App() {
   const { isAuthenticated, isLoading } = useAuthentication();
@@ -31,6 +32,7 @@ function App() {
         >
           <Profile />
         </AuthenticatedRoute>
+        <Route path="*" component={Route404} />
       </Switch>
     </Router>
   );
