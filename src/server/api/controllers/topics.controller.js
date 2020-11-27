@@ -1,6 +1,3 @@
-/* TODO: This is an example controller to illustrate a server side controller.
-Can be deleted as soon as the first real controller is added. */
-
 const knex = require('../../config/db');
 const Error = require('../lib/utils/http-error');
 
@@ -26,34 +23,7 @@ const getTopicById = async (id) => {
   }
 };
 
-const editTopic = async (topicId, updatedTopic) => {
-  return knex('topics')
-    .where({ id: topicId })
-    .update({
-      title: updatedTopic.title,
-    });
-};
-
-const deleteTopic = async (topicId) => {
-  return knex('topics')
-    .where({ id: topicId })
-    .del();
-};
-
-const createTopic = async (body) => {
-  await knex('topics').insert({
-    title: body.title,
-  });
-
-  return {
-    successful: true,
-  };
-};
-
 module.exports = {
   getTopics,
   getTopicById,
-  editTopic,
-  createTopic,
-  deleteTopic,
 };
