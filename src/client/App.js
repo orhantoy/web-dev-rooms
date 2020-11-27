@@ -11,6 +11,12 @@ import Header from './components/Navigation/Header';
 import Profile from './containers/Profile';
 import Loader from './components/Loader';
 
+import LoginPage from './containers/LoginPage/LoginPage.component';
+import SelectionPage from './containers/SelectionPage/SelectionPage.component';
+import RegistrationPage from './containers/RegistrationPage/RegistrationPage.component';
+import EventsPage from './containers/EventsPage/EventsPage.component';
+import ProfilePage from './containers/ProfilePage/ProfilePage.component';
+
 function App() {
   const { isAuthenticated, isLoading } = useAuthentication();
   if (isLoading) return <Loader />;
@@ -21,6 +27,23 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
+
+        <Route exact path="/login-page">
+          <LoginPage />
+        </Route>
+        <Route exact path="/selection-page">
+          <SelectionPage />
+        </Route>
+        <Route exact path="/registration-page">
+          <RegistrationPage />
+        </Route>
+        <Route exact path="/events-page">
+          <EventsPage />
+        </Route>
+        <Route exact path="/profile-page">
+          <ProfilePage />
+        </Route>
+
         <SignIn exact path="/sign-in" />
         <SignUp exact path="/sign-up" />
         <ResetPassword exact path="/reset-password" />
