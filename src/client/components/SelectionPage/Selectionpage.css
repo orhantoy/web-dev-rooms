@@ -1,46 +1,46 @@
-.seletionPage {
+.selection-page {
   width: 100%;
   text-align: center;
 }
-.logo {
+.selection-page .logo {
   padding: 1% 2%;
   margin-bottom: 5%;
 }
-.logo img {
+.selection-page .logo img {
   width: 23%;
 }
-.logo p {
+.selection-page .logo p {
   color: rgb(165, 178, 180);
   font-weight: 700;
   font-size: 20px;
 }
-.radio {
+.selection-page .radio {
   width: 30%;
   margin-left: 33.3%;
   padding: 1% 2%;
 }
-.text {
+.selection-page .text {
   margin: 5% 3%;
   padding: 1% 2%;
   color: rgb(165, 178, 180);
 }
-/*Responsive */
+
 @media screen and (max-width: 800px) {
-  .seletionPage {
+  .selection-page {
     width: 100%;
   }
-  .radio {
+  .selection-page .radio {
     width: 92%;
     margin-left: 2%;
     margin-bottom: 15%;
   }
-  .logo img {
+  .selection-page .logo img {
     width: 53%;
   }
-  .logo p {
+  .selection-page .logo p {
     font-size: 12px;
   }
-  .text {
+  .selection-page .text {
     font-size: 14px;
   }
 }

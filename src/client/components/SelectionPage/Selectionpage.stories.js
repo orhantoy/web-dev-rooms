@@ -1,10 +1,8 @@
 import React from 'react';
 import SelectOption from './SelectionPage';
 
-// import { action } from '@storybook/addon-actions';
-
 export default {
-  title: 'Seletion page',
+  title: 'Selection page',
   component: SelectOption,
 };
 
