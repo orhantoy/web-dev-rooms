@@ -28,19 +28,19 @@ function App() {
           <Home />
         </Route>
 
-        <Route exact path="/login-page">
+        <Route exact path="/login">
           <LoginPage />
         </Route>
-        <Route exact path="/selection-page">
+        <Route exact path="/selection">
           <SelectionPage />
         </Route>
-        <Route exact path="/registration-page">
+        <Route exact path="/registration">
           <RegistrationPage />
         </Route>
-        <Route exact path="/events-page">
+        <Route exact path="/events">
           <EventsPage />
         </Route>
-        <Route exact path="/profile-page">
+        <Route exact path="/profile">
           <ProfilePage />
         </Route>
 
