@@ -1,30 +1,24 @@
 // migration for events table
-exports.up = function(knex) {
+exports.up = function (knex) {
   return knex.schema.createTable('events', (table) => {
     table.increments();
     table.enu('event_type', ['study_group', 'workshop', 'other']).notNullable();
-    table
-      .datetime('event_date')
-      .defaultTo(knex.fn.now())
-      .notNullable();
+    table.datetime('event_date').defaultTo(knex.fn.now()).notNullable();
     table.string('venue').notNullable();
     table.string('description').notNullable();
+    table.integer('maxParticipants').notNullable().defaultTo(2);
     table
-      .integer('maxParticipants')
-      .notNullable()
-      .defaultTo(2);
-    table.integer('created_by').notNullable();
-    table
-      .datetime('created_at')
-      .defaultTo(knex.fn.now())
+      .integer('created_by')
+      .unsigned()
+      .index()
+      .references('id')
+      .inTable('users')
       .notNullable();
-    table
-      .datetime('updated_at')
-      .defaultTo(knex.fn.now())
-      .notNullable();
+    table.datetime('created_at').defaultTo(knex.fn.now()).notNullable();
+    table.datetime('updated_at').defaultTo(knex.fn.now()).notNullable();
     table.datetime('deleted_at');
   });
 };
-exports.down = function(knex) {
+exports.down = function (knex) {
   return knex.schema.dropTable('events');
 };
