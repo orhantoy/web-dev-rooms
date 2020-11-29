@@ -2,9 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export const Avatar = (props) => {
-  return <div className="all-avatar-images">{props.image}</div>;
+  return (
+    <div className="avatar-images-container">
+      <img
+        className="main-avatar-images"
+        src={props.avatarUrl}
+        alt={props.name}
+      />
+    </div>
+  );
 };
 
-Avatar.defaultProps = {
-  image: PropTypes.image,
+Avatar.propTypes = {
+  avatarUrl: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
 };

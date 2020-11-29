@@ -10,23 +10,11 @@ export default {
 };
 
 export const avatarForStudent = () => (
-  <Avatar
-    image={
-      <img className="avatar-student-comp" alt="Student name" src={student} />
-    }
-  />
+  <Avatar avatarUrl={student} name="student" />
 );
 
 export const avatarForMentor = () => (
-  <Avatar
-    image={
-      <img className="avatar-mentor-comp" alt="Mentor name" src={mentor} />
-    }
-  />
+  <Avatar avatarUrl={mentor} name="mentor" />
 );
 
-export const avatarForAdmin = () => (
-  <Avatar
-    image={<img className="avatar-admin-comp" alt="Admin name" src={admin} />}
-  />
-);
+export const avatarForAdmin = () => <Avatar avatarUrl={admin} name="admin" />;

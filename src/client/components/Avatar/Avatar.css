@@ -1,52 +1,19 @@
-.avatar-student-comp {
-  height: 316.9661865234375px;
-  width: 30%;
-  left: 14.5313720703125px;
-  top: 36.3284912109375px;
-  border-radius: 50%;
-}
-
-.avatar-mentor-comp {
-  height: 316.9661865234375px;
-  width: 30%;
-  left: 14.5313720703125px;
-  top: 36.3284912109375px;
-  border-radius: 50%;
-}
-
-.avatar-admin-comp {
-  height: 316.9661865234375px;
-  width: 30%;
-  left: 14.5313720703125px;
-  top: 36.3284912109375px;
-  border-radius: 50%;
-}
-
-.all-avatar-images {
+.avatar-images-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
+.main-avatar-images {
+  max-width: 10em;
+  max-height: 10em;
+  border-bottom-left-radius: 25em;
+  border-bottom-right-radius: 25em;
+}
 
-@media all and (max-width: 480px) {
-  .all-avatar-images {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .avatar-student-comp {
-    width: 80%;
-    height: 300px;
-  }
-  .avatar-mentor-comp {
-    width: 80%;
-    height: 300px;
-  }
-  .avatar-admin-comp {
-    width: 80%;
-    height: 300px;
+@media only screen and (min-width: 279px) and (max-width: 1024px) {
+  .main-avatar-images {
+    max-width: 7em;
+    max-height: 7em;
   }
 }
