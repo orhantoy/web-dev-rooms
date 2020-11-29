@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './Input.css';
 
-export default function Input(prop) {
+export default function Input(props) {
   const [value, setValue] = useState();
 
   const onChange = (event) => {
@@ -10,15 +10,14 @@ export default function Input(prop) {
   };
   return (
     <input
-      className="input-components"
+      className="input-component"
       value={value}
       onChange={onChange}
-      placeholder={prop.text}
+      placeholder={props.text}
     />
   );
 }
 
-Input.propType = {
-  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  onChange: PropTypes.fun,
+Input.defaultProp = {
+  text: PropTypes.string,
 };
