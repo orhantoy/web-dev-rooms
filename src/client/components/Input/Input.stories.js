@@ -1,10 +1,12 @@
 import React from 'react';
 import Input from './Input';
+import { boolean, text, withKnobs } from '@storybook/addon-knobs';
 
-export default { title: 'Input' };
+export default { title: 'Input', decorators: [withKnobs] };
 
-export const Fullname = () => <Input placeholder="Full Name..." />;
-export const Codepenlink = () => <Input placeholder="Codepen Link" />;
-export const Slacklink = () => (
-  <Input placeholder="https://slack.com/meeting..." />
+export const Inputfield = () => (
+  <Input
+    disabled={boolean('Disabled', false)}
+    text={text('placeholder', 'Fullname')}
+  />
 );
