@@ -1,11 +1,7 @@
 exports.up = function(knex) {
   return knex.schema.createTable('questions', (table) => {
     table.increments();
-    table
-      .integer('topic')
-      .unsigned()
-      .references('id')
-      .inTable('topics');
+    table.integer('topic').Nullable();
     table
       .integer('asked_by')
       .unsigned()
