@@ -5,5 +5,5 @@ import { text, withKnobs } from '@storybook/addon-knobs';
 export default { title: 'Input', decorators: [withKnobs] };
 
 export const Inputfield = () => (
-  <Input text={text('placeholder', 'Fullname')} />
+  <Input placeholder={text('placeholder', 'Fullname')} />
 );

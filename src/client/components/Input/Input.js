@@ -13,11 +13,13 @@ export default function Input(props) {
       className="input-component"
       value={value}
       onChange={onChange}
-      placeholder={props.text}
+      placeholder={props.placeholder}
     />
   );
 }
 
 Input.defaultProp = {
-  text: PropTypes.string,
+  placeholder: PropTypes.string,
+  value: PropTypes.string,
+  onChange: PropTypes.func,
 };
