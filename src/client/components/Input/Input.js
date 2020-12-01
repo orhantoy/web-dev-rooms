@@ -17,9 +17,8 @@ export default function Input(props) {
     />
   );
 }
-
-Input.defaultProp = {
+Input.propType = {
   placeholder: PropTypes.string,
   value: PropTypes.string,
-  onChange: PropTypes.func,
+  onChange: PropTypes.func.isRequired,
 };
