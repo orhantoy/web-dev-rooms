@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import './Dropdown.css';
+import './DropDown.css';
 
 export default function StudyDropdown() {
   const items = [
