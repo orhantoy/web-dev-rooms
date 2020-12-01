@@ -19,7 +19,7 @@ export const CardWithEventsOrStudyGroups = (props) => {
         />
       </div>
       <div className="event-card-button">
-        <Button text={props.text} />
+        <Button>{props.children}</Button>
       </div>
     </div>
   );
@@ -27,7 +27,7 @@ export const CardWithEventsOrStudyGroups = (props) => {
 
 CardWithEventsOrStudyGroups.propTypes = {
   path: PropTypes.string,
-  text: PropTypes.string,
+  children: PropTypes.node,
   title: PropTypes.string,
   datetime: PropTypes.string,
   mentor: PropTypes.string,
@@ -36,7 +36,7 @@ CardWithEventsOrStudyGroups.propTypes = {
 
 CardWithEventsOrStudyGroups.defaultProps = {
   path: '',
-  text: '',
+  children: '',
   title: '',
   datetime: '',
   mentor: '',

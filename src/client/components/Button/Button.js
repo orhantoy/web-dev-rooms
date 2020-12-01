@@ -5,18 +5,18 @@ import './Button.styles.css';
 
 export const Button = (props) => {
   return (
-    <button className="button1" type="submit" onClick={props.handleOnClick}>
-      {props.text}
+    <button className="button" type="submit" onClick={props.onClick}>
+      {props.children}
     </button>
   );
 };
 
 Button.propTypes = {
-  text: PropTypes.string,
-  handleOnClick: PropTypes.func,
+  children: PropTypes.node,
+  onClick: PropTypes.func,
 };
 
 Button.defaultProps = {
-  text: '',
-  handleOnClick: '',
+  children: '',
+  onClick: null,
 };

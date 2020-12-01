@@ -8,6 +8,6 @@ export default {
 
 export const Example = () => (
   <>
-    <Button text="Register Yourself" />
+    <Button>Register Yourself</Button>
   </>
 );
