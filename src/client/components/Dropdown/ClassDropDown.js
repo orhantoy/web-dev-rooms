@@ -40,7 +40,7 @@ export default function ClassDropdown() {
     </div>
   );
 }
-ClassDropdown.defaultProp = {
+ClassDropdown.propType = {
   value: PropTypes.string,
-  onChange: PropTypes.func,
+  onChange: PropTypes.func.isRequired,
 };

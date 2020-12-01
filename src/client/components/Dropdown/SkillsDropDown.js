@@ -35,7 +35,7 @@ export default function SkillDropdown() {
     },
   ];
 
-  const [value, setValue] = useState('Add Skills here');
+  const [value, setValue] = useState('React');
 
   return (
     <div className="dropdown-component">
@@ -58,7 +58,7 @@ export default function SkillDropdown() {
   );
 }
 
-SkillDropdown.defaultProp = {
+SkillDropdown.propType = {
   value: PropTypes.string,
-  onChange: PropTypes.func,
+  onChange: PropTypes.func.isRequired,
 };

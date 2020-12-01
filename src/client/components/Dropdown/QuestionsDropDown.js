@@ -6,7 +6,7 @@ export default function QuestionDropdown() {
   const items = [
     {
       id: '01',
-      value: 'question1',
+      value: 'Add Question here',
     },
     {
       id: '02',
@@ -40,7 +40,7 @@ export default function QuestionDropdown() {
     </div>
   );
 }
-QuestionDropdown.defaultProp = {
+QuestionDropdown.propType = {
   value: PropTypes.string,
-  onChange: PropTypes.func,
+  onChange: PropTypes.func.isRequired,
 };
