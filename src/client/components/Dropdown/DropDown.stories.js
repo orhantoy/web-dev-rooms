@@ -1,8 +1,8 @@
 import React from 'react';
 import StudyDropdown from './DropDown';
-import ClassDropdown from './DropDown-Class';
-import SkillDropdown from './DropDown-Skills';
-import QuestionDropdown from './DropDown-Questions';
+import ClassDropdown from './ClassDropDown';
+import SkillDropdown from './SkillsDropDown';
+import QuestionDropdown from './QuestionsDropDown';
 
 export default { title: 'DropDown' };
 
