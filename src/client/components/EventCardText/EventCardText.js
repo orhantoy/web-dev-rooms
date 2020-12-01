@@ -9,8 +9,8 @@ export const EventCardText = (props) => {
       <div className="event-card-title">{props.title}</div>
       <div className="event-card-date-time">{props.datetime}</div>
       <br />
-      <div className="event-card-mentor">Mentor : {props.mentor}</div>
-      <div className="event-card-link">Link : {props.link}</div>
+      <div className="event-card-mentor">Mentor: {props.mentor}</div>
+      <div className="event-card-link">Link: {props.link}</div>
     </div>
   );
 };

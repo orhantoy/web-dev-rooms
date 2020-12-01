@@ -5,7 +5,7 @@ import './Button.styles.css';
 
 export const Button = (props) => {
   return (
-    <button className="button-register-yourself" type="submit">
+    <button className="button1" type="submit" onClick={props.handleOnClick}>
       {props.text}
     </button>
   );
@@ -13,8 +13,10 @@ export const Button = (props) => {
 
 Button.propTypes = {
   text: PropTypes.string,
+  handleOnClick: PropTypes.func,
 };
 
 Button.defaultProps = {
   text: '',
+  handleOnClick: '',
 };
