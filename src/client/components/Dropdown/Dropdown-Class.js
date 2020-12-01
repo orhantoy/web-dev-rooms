@@ -2,23 +2,23 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './Dropdown.css';
 
-export default function StudyDropdown() {
+export default function ClassDropdown() {
   const items = [
     {
       id: '01',
-      value: 'Elastic',
+      value: 'Class14',
     },
     {
       id: '02',
-      value: 'Zendesk',
+      value: 'Class15',
     },
     {
       id: '03',
-      value: 'Hack Your Future',
+      value: 'Class16',
     },
   ];
 
-  const [value, setValue] = useState('Elastic');
+  const [value, setValue] = useState('Class14');
 
   return (
     <div className="dropdown-component">
@@ -40,7 +40,7 @@ export default function StudyDropdown() {
     </div>
   );
 }
-StudyDropdown.defaultProp = {
+ClassDropdown.defaultProp = {
   value: PropTypes.string,
   onChange: PropTypes.func,
 };

@@ -1,24 +1,41 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+
 import './Dropdown.css';
 
-export default function StudyDropdown() {
+export default function SkillDropdown() {
   const items = [
     {
       id: '01',
-      value: 'Elastic',
+      value: 'HTML/CSS',
     },
     {
       id: '02',
-      value: 'Zendesk',
+      value: 'Firebase',
     },
     {
       id: '03',
-      value: 'Hack Your Future',
+      value: 'Javascript',
+    },
+    {
+      id: '04',
+      value: 'MYSQL',
+    },
+    {
+      id: '05',
+      value: 'NodeJS',
+    },
+    {
+      id: '06',
+      value: 'React',
+    },
+    {
+      id: '07',
+      value: 'Typescript',
     },
   ];
 
-  const [value, setValue] = useState('Elastic');
+  const [value, setValue] = useState('Add Skills here');
 
   return (
     <div className="dropdown-component">
@@ -40,7 +57,8 @@ export default function StudyDropdown() {
     </div>
   );
 }
-StudyDropdown.defaultProp = {
+
+SkillDropdown.defaultProp = {
   value: PropTypes.string,
   onChange: PropTypes.func,
 };

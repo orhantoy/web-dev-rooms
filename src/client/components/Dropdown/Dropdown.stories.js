@@ -1,11 +1,12 @@
 import React from 'react';
-import { Skills, StudyGroup, DropDown } from './DropDown';
+import StudyDropdown from './Dropdown';
+import ClassDropdown from './Dropdown-Class';
+import SkillDropdown from './DropDown-Skills';
+import QuestionDropdown from './Dropdown-Question';
 
-export default { title: 'Input' };
+export default { title: 'DropDown' };
 
-export const StudyGroupDropdown = () => <StudyGroup title="Elastic" />;
-export const ClassDropdown = () => <DropDown title="Class...." />;
-export const QuestionDropdown = () => (
-  <DropDown title="Select the topic to ask" />
-);
-export const SkillAdd = () => <Skills title="Add Skills Here" />;
+export const Studygroup = () => <StudyDropdown />;
+export const Classgroup = () => <ClassDropdown />;
+export const Skillgroup = () => <SkillDropdown />;
+export const Questiongroup = () => <QuestionDropdown />;
