@@ -1,14 +1,14 @@
 import React from 'react';
-import './Button.css';
+import './SignInButton.styles.css';
 import PropTypes from 'prop-types';
 
-const Button = (props) => {
-  const { onclick } = props;
-  const clicked = () => {
-    onclick();
-  };
+const SignInButton = (props) => {
   return (
-    <button type="submit" className="button" onClick={clicked}>
+    <button
+      type="submit"
+      className="button-sign-with-slack"
+      onClick={props.onClick}
+    >
       <img
         alt="Sign in with Slack"
         src="https://platform.slack-edge.com/img/sign_in_with_slack.png"
@@ -18,6 +18,7 @@ const Button = (props) => {
   );
 };
 // add propType for onclick function
-Button.propTypes = { onclick: PropTypes.func.isRequired };
+SignInButton.propTypes = { onClick: PropTypes.func };
+SignInButton.defaultProps = { onClick: null };
 
-export default Button;
+export default SignInButton;
