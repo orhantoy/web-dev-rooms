@@ -15,29 +15,29 @@
   font-weight: 900;
 }
 /*Style the image*/
-.button img {
+.button-sign-with-slack img {
   width: 100%;
   display: flex;
 }
 /*Make button active when you click it*/
-.button:active {
+.button-sign-with-slack:active {
   transform: translateY(4px);
 }
 /*Responsive */
 @media screen and (max-width: 800px) {
-  .button {
+  .button-sign-with-slack {
     width: 50%;
   }
-  .button img {
+  .button-sign-with-slack img {
     width: 100%;
     display: flex;
   }
 }
 @media screen and (max-width: 500px) {
-  .button {
+  .button-sign-with-slack {
     width: 50%;
   }
-  .button img {
+  .button-sign-with-slack img {
     width: 100%;
     display: flex;
   }
