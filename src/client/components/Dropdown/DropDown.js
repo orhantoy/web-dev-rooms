@@ -1,46 +1,35 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
+import PropTypes, { shape } from 'prop-types';
 import './DropDown.css';
 
-export default function StudyDropdown() {
-  const items = [
-    {
-      id: '01',
-      value: 'Elastic',
-    },
-    {
-      id: '02',
-      value: 'Zendesk',
-    },
-    {
-      id: '03',
-      value: 'Hack Your Future',
-    },
-  ];
-
-  const [value, setValue] = useState('Elastic');
+export default function DropDown(props) {
+  const [values, setValue] = useState('');
 
   return (
     <div className="dropdown-component">
       <select
         className="select-css"
-        value={value}
+        value={values}
         onChange={(e) => setValue(e.currentTarget.value)}
       >
-        {items.map((studygroup) => (
-          <option
-            className="dropdown-option"
-            key={studygroup.id}
-            value={studygroup.value}
-          >
-            {studygroup.value}
+        {props.items.map((item) => (
+          <option className="dropdown-option" key={item.id} value={item.value}>
+            {item.value}
           </option>
         ))}
       </select>
     </div>
   );
 }
-StudyDropdown.propType = {
-  value: PropTypes.string,
-  onChange: PropTypes.func.isRequired,
+DropDown.propTypes = {
+  items: PropTypes.arrayOf(
+    shape({
+      id: PropTypes.string,
+      value: PropTypes.string,
+    }),
+  ),
+};
+
+DropDown.defaultProps = {
+  items: [],
 };
