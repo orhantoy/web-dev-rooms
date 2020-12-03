@@ -9,6 +9,7 @@ const TopicsRouter = require('./topics.router');
 
 const groupsRouter = require('./groups.router');
 
+const eventsRouter = require('./events.router');
 
 const swaggerJsDoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
@@ -40,5 +41,6 @@ router.use('/topics', TopicsRouter);
 
 router.use('/groups', groupsRouter);
 
+router.use('/events', eventsRouter);
 
 module.exports = router;
