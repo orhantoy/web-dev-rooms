@@ -3,7 +3,14 @@ const Error = require('../lib/utils/http-error');
 
 const getEvents = async () => {
   try {
-    return await knex('events').select('events.id', 'event.event_type');
+    return await knex('events').select(
+      'events.id',
+      'event.event_type',
+      'event_date',
+      'venue',
+      'maxParticipants',
+      'description',
+    );
   } catch (error) {
     return error.message;
   }
@@ -11,13 +18,13 @@ const getEvents = async () => {
 
 const getEventById = async (id) => {
   try {
-    const events = await knex('events')
+    const event = await knex('events')
       .select('events.id as id', 'event_type')
       .where({ id });
-    if (events.length === 0) {
+    if (event.length === 0) {
       throw new Error(`incorrect entry with the id of ${id}`, 404);
     }
-    return events;
+    return event;
   } catch (error) {
     return error.message;
   }
